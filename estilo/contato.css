@@ -1,0 +1,152 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.cabecalho__caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.paginas {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+.navegacao {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+.navegacao-titulo {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.navegacao-titulo:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+/* FORMULARIO */
+
+.formulario {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.formulario__enviar {
+    margin: 40px 0;
+}
+
+.formulario__enviar label, .formulario__enviar legend {
+    display: flex;
+    font-size: 20px;
+    margin: 0 0 10px 3px;
+}
+
+.formulario__enviar-contato {
+    display: flex;
+    font-size: 16px;
+    margin: 0 0 20px 3px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.formulario__enviar .checkbox {
+    margin: 20px 0;
+}
+
+/* BOTÃO */
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: #ffa500;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+}
+
+.enviar:hover {
+    background: #ff8c00;
+    transform: scale(1.2);
+}
+
+/* TABELA */
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color:#FFFFFF;
+    font-weight: bold;
+}
+
+td,th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/* RODAPE */
+
+footer {
+    text-align: center;
+    background: url("../img/bg.jpg");
+    padding: 40px 0;
+}
+
+.rodape-texto {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+/* MUDANÇA DE TELA */
+
+@media screen and (max-width: 480px) {
+    .cabecalho .cabecalho__caixa, .formulario {
+        width: 100%;
+    }
+
+    .cabecalho__caixa {
+        display: inline-block;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .paginas {
+        position: static;
+    }
+
+    .formulario__enviar {
+        margin: 40px 10px;
+    }
+
+    .formulario__enviar-contato {
+        width: 70%;
+    }
+
+    table {
+        margin: 20px 10px 40px;
+    }
+}
